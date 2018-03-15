@@ -1,0 +1,10 @@
+<!--pages/modal/modal.wxml-->
+<view class='wrap'>
+  <view class='mask' wx:if='{{!maskDisplay}}'>
+    <view class='content' wx:if='{{!maskDisplay}}' animation='{{animation}}'>
+      <!--这块内容 可重写  -->
+      <view class='close-btn' bindtap='close'>关闭</view>
+    </view>
+  </view>
+</view>
+<button type='primary' bindtap='open'>打开 modal</button>

@@ -1,0 +1,3 @@
+<!--pages/demo/demo.wxml-->
+<text>pages/demo/demo.wxml</text>
+<button type='primary' bindtap='change'>切歌</button>

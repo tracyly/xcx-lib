@@ -1,0 +1,2 @@
+<!--pages/notify/notify.wxml-->
+<notify-top bind:taphandle="tap1"></notify-top>

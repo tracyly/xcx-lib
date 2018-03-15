@@ -1,0 +1,8 @@
+<!--pages/formid/formid.wxml-->
+<text>pages/formid/formid.wxml</text>
+<formid-custom bind:taphandle="tap1">
+  <view class="img-item">
+    <image mode="widthFix" src="{{src}}"></image>
+    <view class='text-des'>hello world</view>
+  </view>
+</formid-custom>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "notify-top": "../../component/notify-top2/notify-top"
+  }
+}

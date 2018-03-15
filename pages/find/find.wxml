@@ -1,0 +1,14 @@
+<!--pages/find/find.wxml-->
+<view class="listContainer">
+   <view wx:for="{{list}}" wx:key="index" class="item">
+    <!--通过条件判断加载某一个-->
+    <!-- <single-line bind:taphandle="tap1" d="{{item}}" wx:if="{{item.type==='单行'}}"></single-line> -->
+    <swiper bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='0'}}"></swiper>
+    <card bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='3'}}"></card>
+    
+    <swiper-item bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='5'}}"></swiper-item>
+    <swiper-item-double-title bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='4'}}"></swiper-item-double-title>
+    <lineword bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='2'}}"></lineword>
+    <card-img-right bind:taphandle="tap1" d="{{item}}" wx:if="{{item.Type==='1'}}"></card-img-right>
+  </view>  
+</view> 

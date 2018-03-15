@@ -1,0 +1,13 @@
+/* pages/find/find.wxss */
+page {
+  background: #eee;
+}
+
+.listContainer {
+  width: 690rpx;
+  margin: 20rpx 30rpx 0 30rpx;
+}
+.item{
+  margin-bottom: 20rpx;
+  box-shadow: 0 2rpx 2rpx 0 rgba(0,0,0,0.14), 0 1rpx 5rpx 0 rgba(0,0,0,0.12), 0 3rpx 1rpx -2rpx rgba(0,0,0,0.2);
+}

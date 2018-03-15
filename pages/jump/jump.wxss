@@ -1,0 +1,14 @@
+/* pages/jump/jump.wxss */
+page{
+  background-color: #fff;
+}
+.content {
+}
+.content image {
+  position: absolute;
+  top: 200rpx;
+  left: 50%;
+  width: 700rpx;
+  height: 700rpx;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/formid/formid",
+    "pages/notify/notify",
+    "pages/notify2/notify2",
+    "pages/modal/modal",
+    "pages/demo/demo",
+    "pages/jump/jump",
+    "pages/pk/pk",
+    "pages/find/find"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

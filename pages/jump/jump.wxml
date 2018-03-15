@@ -1,0 +1,4 @@
+<!--pages/jump/jump.wxml-->
+<view wx:if='{{imgDisplay}}' class='content'>
+  <image src='{{url}}' mode='widthFix'></image>
+</view>

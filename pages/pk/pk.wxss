@@ -1,0 +1,131 @@
+/* pages/pk/pk.wxss */
+page {
+  height: 100%;
+  background: #26347C;
+  overflow: hidden;
+}
+.wrap {
+  height:100%;
+}
+.userImg {
+  width:131rpx;
+  height:131rpx;
+  border: 2rpx solid #fff;
+  border-radius: 50%;
+  margin-top: 27rpx;
+}
+.info-box {
+  position:absolute;
+  background:10rpx;
+  width:381rpx;
+  transform:rotate(-15deg);
+  z-index:999;
+  display: flex;
+}
+.box-top {
+  right:50rpx;
+  bottom:-36rpx;
+}
+.box-bottom {
+  left:50rpx;
+  top:-36rpx;
+}
+.info-box > view > view {
+  font-size:28rpx;
+  font-family:PingFang-SC-Medium;
+  color:rgba(254,254,255,1);
+  width:100%;
+}
+.info-box > view{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.box-top > view {
+  transform: translate(38rpx)
+}
+.box-bottom > view {
+  transform: translate(-38rpx)
+}
+/*动画入场*/
+.pk {
+  text-align: center;
+  position: relative;
+  width: 750rpx;
+  height: 45%;
+}
+.pk-top {
+  background-color: #0C77D1;
+  -webkit-animation: right .6s ease-in-out;
+  animation: right .6s ease-in-out;
+}
+.pk-bottom {
+  top: 200rpx;
+  background-color: #C82B4D;
+  -webkit-animation: left .6s ease-in-out;
+  animation: left .6s ease-in-out;
+}
+.pk:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+.pk-top:after {
+  bottom: 0;
+  transform: translateY(100%);
+  border-left: 750rpx solid #0C77D1;
+  border-bottom: 200rpx solid transparent;
+}
+.pk-bottom:after {
+  top: 0;
+  transform: translateY(-100%);
+  border-right: 750rpx solid #C82B4D;
+  border-top: 200rpx solid transparent;
+}
+@-webkit-keyframes right
+{
+  from {
+    right: 600px;
+    top: 600px;
+  }
+  to {
+    right: 0;
+    top: 0;
+  }
+}
+@keyframes right
+{
+  from {
+    right: 600px;
+    top: 600px;
+  }
+  to {
+    right: 0;
+    top: 0;
+  }
+}
+@-webkit-keyframes left
+{
+  from {
+    left: 600px;
+    bottom: 600px;
+  }
+  to {
+    left: 0;
+    bottom: 0;
+  }
+}
+@keyframes left
+{
+  from {
+    left: 600px;
+    bottom: 600px;
+  }
+  to {
+    left: 0;
+    bottom: 0;
+  }
+}

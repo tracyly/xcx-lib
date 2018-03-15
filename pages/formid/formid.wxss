@@ -1,0 +1,22 @@
+/* pages/formid/formid.wxss */
+.img-item {
+  width: 400rpx;
+  height: 400rpx;
+  position: relative;
+}
+
+.img-item image {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.text-des {
+  position: absolute;
+  bottom: 0;
+  height: 35px;
+  line-height: 35px;
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  padding-left: 5px;
+  box-sizing: border-box;
+}

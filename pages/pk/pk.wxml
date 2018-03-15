@@ -1,0 +1,23 @@
+<!--pages/pk/pk.wxml-->
+<view class="wrap">
+  <view class='pk pk-top'>
+    <view class="info-box box-top">
+      <view>
+        <view>{{userInfo['nickName']}}</view>
+        <view>LV 3</view>
+        <view>来自 杭州</view>
+      </view>
+      <image src="{{userInfo['avatarUrl']}}" class="userImg"></image>
+    </view>
+  </view>
+  <view class='pk pk-bottom'>
+    <view class="info-box box-bottom">
+      <image src="{{userInfo['avatarUrl']}}" class="userImg"></image>
+      <view>
+        <view>{{userInfo['nickName']}}</view>
+        <view>LV 3</view>
+        <view>来自 杭州</view>
+      </view>
+    </view>
+  </view>
+</view>

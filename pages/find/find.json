@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "single-line": "../../component/more-find/single-line/single-line",
+    "swiper": "../../component/more-find/swiper/swiper",
+    "card": "../../component/more-find/card/card",
+    "swiper-item": "../../component/more-find/swiper-item/swiper-item",
+    "swiper-item-double-title": "../../component/more-find/swiper-item-double-title/swiper-item-double-title",
+    "lineword": "../../component/more-find/lineword/lineword",
+    "card-img-right": "../../component/more-find/card-img-right/card-img-right"
+  }
+}
