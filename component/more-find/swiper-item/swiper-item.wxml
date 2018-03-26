@@ -7,13 +7,14 @@
   circular:采用衔接滑动
   PS:整个宽度是690rpx
   previous-margin:显示前一项
--->
-<swiper class="swiper" 
   autoplay="true"
   interval="3000"
   circular="true"
   previous-margin="230rpx"
   next-margin="230rpx"
+-->
+<swiper class="swiper" 
+  display-multiple-items="3"
 >
   <!--列表项循环,循环的里面的某一项，现在的是临时的-->
   <block wx:for="{{d.Param}}" wx:key="index">

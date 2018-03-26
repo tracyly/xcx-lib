@@ -2,7 +2,7 @@
 <view data-obj="{{d.Param[0]}}" bindtap='toOtherApp' class="card">  
     <view class="title-box">
       <view class="title">{{d.Param[0].Txt1}}</view>
-      <view class="sm-title">{{d.Param[0].Txt1}}</view>
+      <view class="sm-title">{{d.Param[0].Txt2}}</view>
     </view>
     <view class="content">
       <!--图片大小200rpx-->
