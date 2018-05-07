@@ -1,0 +1,402 @@
+/* 广告页面 */
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-center{
+  text-align: center;
+}
+.ads-container{
+  width:100%;
+  padding:20rpx 30rpx;
+  box-sizing: border-box;
+  min-height: 150rpx;
+  border-radius: 6rpx;
+  color:#333;
+  font-size: 30rpx;
+  overflow:hidden;
+}
+image{
+  vertical-align: middle;
+  width:100%;
+  height:100%;
+}
+/*ads1*/
+.ads1,.ads5,.ads6{
+  border:1rpx solid #bebebe;
+  border-radius: 8rpx;
+  min-height: 250rpx;
+}
+.title{
+  padding: 8rpx 12rpx;
+  -webkit-font-smoothing: antialiased;
+}
+/*end ads1*/
+/*ads2*/
+.ads2-left,.ads2-right{
+  width:50%;
+  border:1rpx solid #bebebe;
+  border-radius: 8rpx;
+}
+.ads2-left{
+  margin-right: 10rpx;
+}
+.ads2-right{
+  margin-left: 10rpx;
+}
+/*end ads2*/
+/*ads3*/
+.ads2-middle{
+  border:1rpx solid #bebebe;
+  border-radius: 6rpx;
+  width:50%;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+/*end ads3*/
+/*ads4*/
+.ads2-middle2{
+  border:1rpx solid #bebebe;
+  border-radius: 4rpx;
+  width:50%;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+.ads4 .ads2-middle{
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+}
+.ads4 .ads2-left{
+  margin-right: 5rpx;
+}
+.ads4 .ads2-right{
+  margin-left: 5rpx;
+}
+/*end ads4*/
+/*ads5*/
+.ads5-left{
+  width:66.6%;
+}
+.ads5-right{
+  width:33.4%;
+  text-align: center;
+  padding:0 25rpx;
+  box-sizing: border-box;
+}
+.ads5-right-top{
+  text-align: left;
+  display:-webkit-box;
+  -webkit-line-clamp:3;/*强制两行显示*/
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  margin-bottom: 20rpx;
+}
+.see{
+  padding:6rpx 22rpx;
+  color:#35b480;
+  border:2rpx solid #35b480;
+  border-radius: 10rpx;
+}
+/*end ads5*/
+/*ads6*/
+.ads6 .title{
+  width:65%;
+}
+/*end ads6*/
+/*ads7*/
+.ads7{
+  position: fixed;
+  left: 0;
+  top:0;
+  right:0;
+  bottom: 0;
+}
+.ads7-bg{
+  background-color: #000;
+   opacity: 0.5; 
+}
+.ads7-box{
+  position: absolute;
+  z-index: 1000;
+  width:75%;
+}
+/* .ads7 .title-box{
+  background-color: #fff;
+} */
+.ads7 .title{
+  width:60%;
+}
+.close{
+  float:right;
+  background-color: #fff;
+  width:60rpx;
+  height:60rpx;
+  line-height: 54rpx;
+  text-align: center;
+  font-size: 60rpx;
+  border-radius: 50%;
+  margin-bottom: 50rpx;
+}
+/*  
+为什么 无法内容生成
+.ads7-container::before{
+  content:'';
+  display: table;
+  clear: both;
+}  */
+.ads7 image{
+  border-top-left-radius: 10rpx;
+  border-top-right-radius:10rpx; 
+}
+.close:after{
+  content: '';
+  display: block;
+  width:2rpx;
+  height:80rpx; 
+  margin-left: 29rpx;
+  background-color: #fff;
+}
+.ads7-container{
+  border-radius: 10rpx;
+  background-color: #fff;
+  clear: both;
+}
+/*end ads7*/
+/*ads8*/
+.ads8 swiper{
+  height:300rpx;
+}
+.ads8 .swiper{
+  height:300rpx;
+  background:#fff;
+  border-radius: 10rpx;
+}
+.ads8 .appList{
+  height:100%;
+  width:100%;
+}
+.ads8 .item-img{
+  width:690rpx;
+  height:300rpx;
+}
+/*end ads8*/
+/*ads9*/
+/* component/more-fing/swiper/swiper.wxss */
+.ads9 .card{
+  background:#fff;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads9 .title-box{
+  padding:20rpx;
+  padding-bottom: 10rpx; 
+  margin-bottom: 10rpx;
+  width:70%;
+}
+.ads9 .image-right{
+  width:20%;
+  /* background: #ddd; */
+}
+/*图片的样式可能不对*/
+.ads9 .image-right image{
+  height:200rpx;
+  width:100%;
+  margin-top: 15rpx;
+}
+.ads9 .title{
+  display: block;
+  line-height: 40rpx;
+  margin-bottom: 8rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+  white-space:nowrap;
+  overflow:hidden;   
+  text-overflow:ellipsis;
+  -webkit-font-smoothing: antialiased;
+}
+.ads9 .sm-title{
+  font-size: 28rpx;
+  color:rgba(0,0,0,0.4);
+}
+/*end ads9*/
+/*ads10*/
+.ads10 .applist {
+  min-height: 50rpx;
+  padding: 20rpx 5%;
+  background: #fff;
+  border-radius: 10rpx;
+  position: relative;
+  font-size: 30rpx;
+  -webkit-font-smoothing: antialiased;
+}
+/*end ads10*/
+/*ads11*/
+/* component/more-fing/swiper/swiper.wxss */
+.ads11 .card{
+  background:#fff;
+  border-radius: 10rpx;
+  padding-bottom: 20rpx;
+}
+.ads11 .title-box{
+  padding:20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid rgba(160,160,160,0.2);
+  margin-bottom: 10rpx;
+}
+.ads11 .title{
+  display: block;
+  line-height: 40rpx;
+  margin-bottom: 8rpx;
+  font-size: 35rpx;
+  font-weight: 300;
+  white-space:nowrap;
+  overflow:hidden;   
+  text-overflow:ellipsis;
+  -webkit-font-smoothing: antialiased;
+}
+.ads11 .sm-title{
+  font-size: 28rpx;
+  color:rgba(0,0,0,0.4);
+}
+.ads11 .content{
+  /* background:#eee;
+  font-size: 30rpx;
+  color:rgba(0,0,0,0.7); */
+  margin:0 20rpx; 
+  /* padding:15rpx 10rpx 10rpx; */
+  /* -webkit-font-smoothing: antialiased; */
+}
+.ads11 .image{
+  height:300rpx;
+  width:650rpx;
+}
+/*end ads11*/
+/*ads12*/
+/* component/more-fing/swiper/swiper.wxss */
+.ads12 .swiper{
+  height:320rpx;
+  background:#fff;
+  border-radius: 10rpx;
+}
+.ads12 .appList{
+  height:100%;
+  width:100%;
+}
+.ads12 .swiperItem{
+  text-align: center;
+}
+.ads12 .swiperItem-img-box{
+  width:210rpx;
+  height:210rpx;
+  margin: 0 auto;
+  /* background: rgba(0,0,0,0.1); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads12 .swiperItem-image{
+  width:180rpx;
+  height:180rpx;
+  border-radius: 5rpx;
+}
+/*文字标题1 的样式*/
+.ads12 .itemWord-title1{
+  height:44rpx;
+  overflow: hidden;
+}
+.ads12 .itemWord-title2{
+  height:44rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+  color: rgba(0,0,0,0.3);
+}
+/*end ads12*/
+/*ads13*/
+.ads13 .swiper{
+  background:#fff;
+  border-radius: 10rpx;
+}
+.ads13 .appList{
+  height:100%;
+  width:100%;
+}
+.ads13 .swiperItem{
+  text-align: center;
+  padding-top: 13rpx;
+}
+.ads13 .swiperItem-img-box{
+  width:210rpx;
+  height:210rpx;
+  margin: 0 auto;
+  background: rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ads13 .swiperItem-image{
+  width:180rpx;
+  height:180rpx;
+  border-radius: 5rpx;
+}
+.ads13 .itemWord{
+  background: -webkit-linear-gradient(to right, #ff8d3b , #ffb787);
+  background: linear-gradient(to right, #ff8d3b , #ffb787);
+  color:#fff;
+  width:210rpx;
+  height:50rpx;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 15rpx;
+  border-radius: 4rpx;
+}
+.ads13 .swiperItem:nth-child(2n) .itemWord{
+  background: -webkit-linear-gradient(to right, #fd6ea9 , #ff98c3);
+  background: linear-gradient(to right, #fd6ea9 , #ff98c3);
+}
+.ads13 .swiperItem:nth-child(3n) .itemWord{
+  background: -webkit-linear-gradient(to right, #f9cd31 , #ffdd61);
+  background: linear-gradient(to right, #f9cd31 , #ffdd61); 
+}
+/*end ads13*/
+/*ads14*/
+.ads14 .applist {
+  width: 90%;
+  min-height: 100rpx;
+  padding: 20rpx 5%;
+  background: #fff;
+  border-radius: 10rpx;
+  position: relative;
+}
+.ads14 .appLogo {
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -54rpx;
+}
+.ads14 .appCon {
+  margin-left: 150rpx;
+}
+.ads14 .appName {
+  display: block;
+  font-size: 30rpx;
+}
+.ads14 .noDesc {
+  line-height: 100rpx;
+}
+.ads14 .appDesc {
+  font-size: 28rpx;
+  color: #aaa;
+  display: block;
+}
+/*end ads14*/

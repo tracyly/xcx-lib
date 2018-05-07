@@ -8,7 +8,9 @@
     "pages/demo/demo",
     "pages/jump/jump",
     "pages/pk/pk",
-    "pages/find/find"
+    "pages/find/find",
+    "pages/camera/camera",
+    "pages/ads/ads"
   ],
   "window": {
     "backgroundTextStyle": "light",

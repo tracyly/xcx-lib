@@ -1,0 +1,5 @@
+{
+    "usingComponents": {
+        "custom-camera": "../../component/custom-camera/custom-camera"
+    }
+}

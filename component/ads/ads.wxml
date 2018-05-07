@@ -1,0 +1,200 @@
+<view class="ads-container" wx:if="{{adsShow}}">
+  <!-- style="height:{{data.Height}};width:{{data.Width}};" -->
+  <!--广告1-->
+  <view bindtap='toOtherApp' data-state="0" class="ads1" wx:if="{{_id===0}}">
+    <view class="content">
+      <!--图片大小200rpx-->
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+    </view>
+    <view class="title-box">
+      <view class="title">{{data.AttrData[0].Txt1}}</view>
+    </view>
+  </view>
+  <!--广告2-->
+  <view class="ads2 flex-between" wx:if="{{_id===1}}">
+    <view class="ads2-left" bindtap='toOtherApp' data-state="0">
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title">{{data.AttrData[0].Txt1}}</view>
+    </view>
+    <view class="ads2-right" bindtap='toOtherApp' data-state="1">
+      <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title">{{data.AttrData[1].Txt1}}</view>
+    </view>
+  </view>
+  <!--广告3-->
+  <view class="ads2 flex-between" wx:if="{{_id===2}}">
+    <view class="ads2-left" bindtap='toOtherApp' data-state="0">
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[0].Txt1}}</view>
+    </view>
+    <view class="ads2-middle" bindtap='toOtherApp' data-state="1">
+      <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[1].Txt1}}</view>
+    </view>
+    <view class="ads2-right" bindtap='toOtherApp' data-state="2">
+      <image src="{{data.AttrData[2].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[2].Txt1}}</view>
+    </view>
+  </view>
+  <!--广告4-->
+  <view class="ads4 flex-between" wx:if="{{_id===3}}">
+    <view class="ads2-left" bindtap='toOtherApp' data-state="0">
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[0].Txt1}}</view>
+    </view>
+    <view class="ads2-middle" bindtap='toOtherApp' data-state="1">
+      <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[1].Txt1}}</view>
+    </view>
+    <view class="ads2-middle2" bindtap='toOtherApp' data-state="2">
+      <image src="{{data.AttrData[2].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[2].Txt1}}</view>
+    </view>
+    <view class="ads2-right" bindtap='toOtherApp' data-state="3">
+      <image src="{{data.AttrData[3].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+      <view class="title text-center">{{data.AttrData[3].Txt1}}</view>
+    </view>
+  </view>
+  <!--广告5-->
+  <view class="ads5 flex-between" wx:if="{{_id===4}}">
+    <view class="ads5-left">
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+    </view>
+    <view class="ads5-right">
+      <view class="ads5-right-top">{{data.AttrData[0].Txt1}}</view>
+      <text class="see" bindtap='toOtherApp' data-state="0">查看详情</text>
+    </view>
+  </view>
+  <!--广告6-->
+  <view class="ads6" wx:if="{{_id===5}}">
+    <view class="content">
+      <!--图片大小200rpx-->
+      <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+    </view>
+    <view class="title-box flex-center">
+      <view class="title">{{data.AttrData[0].Txt1}}</view>
+      <view><text class="see" bindtap='toOtherApp' data-state="0">查看详情</text></view>
+    </view>
+  </view>
+  <!--广告7-->
+  <view class="ads7 flex-center" wx:if="{{_id===6&&showAds7}}">
+    <view class="ads7-bg ads7"></view>
+    <view class="ads7-box">
+      <view class="close" bindtap='close'>×</view>
+      <view class="ads7-container">
+        <view class="content">
+          <!--图片大小200rpx-->
+          <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
+        </view>
+        <view class="title-box flex-center">
+          <view class="title">{{data.AttrData[0].Txt1}}</view>
+          <view><text class="see" bindtap='toOtherApp' data-state="0">查看详情</text></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--广告8-->
+  <view class='ads8'>
+    <swiper class="swiper" 
+      indicator-dots="true" 
+      indicator-color="rgba(0,0,0,0.3)"
+      indicator-active-color="#666"
+      autoplay="true"
+      interval="3000"
+      circular="true"
+      wx:if="{{_id===7}}"
+    >
+      <!--列表项循环,循环的里面的某一项，现在的是临时的-->
+      <block wx:for="{{data.AttrData}}" wx:key="index">
+        <!--预计是 列表项 点击-->
+        <swiper-item bindtap='toOtherApp' data-state='{{index}}'>
+          <image src="{{item.ImgUrl}}" class="item-img image" mode="widthFix"></image>
+        </swiper-item>
+      </block>
+    </swiper> 
+  </view>
+  <!--广告9-->
+  <view wx:if="{{_id===8}}" class='ads9'>
+    <view  bindtap='toOtherApp' data-state='0' class="card">  
+      <view class="title-box">
+        <view class="title">{{data.AttrData[0].Txt1}}</view>
+        <view class="sm-title">{{data.AttrData[0].Txt2}}</view>
+      </view>
+      <view class="image-right">
+        <image src="{{data.AttrData[0].ImgUrl}}" mode="widthFix"></image>
+      </view>
+    </view> 
+  </view>
+  <!--广告10-->
+  <view wx:if="{{_id===9}}" class="ads10">
+    <view class="applist" bindtap='toOtherApp' state='0'>  
+      {{data.AttrData[0].Txt1}}
+    </view> 
+  </view>
+  <!--广告11-->
+  <view class="ads11" wx:if="{{_id===10}}">
+    <view data-state='0' bindtap='toOtherApp' class="card">  
+      <view class="title-box">
+        <view class="title">{{data.AttrData[0].Txt1}}</view>
+        <view class="sm-title">{{data.AttrData[0].Txt2}}</view>
+      </view>
+      <view class="content">
+        <!--图片大小200rpx-->
+        <image src="{{data.AttrData[0].ImgUrl}}" class="image" mode="widthFix"></image>
+      </view>
+    </view> 
+  </view>
+  <!--广告12-->
+  <view class="ads12" wx:if="{{_id===11}}">
+    <swiper class="swiper" 
+      display-multiple-items="3"
+    >
+      <!--列表项循环,循环的里面的某一项，现在的是临时的-->
+      <block wx:for="{{data.AttrData}}" wx:key="index">
+        <!--预计是 列表项 点击-->
+        <swiper-item data-state="{{index}}" bindtap='toOtherApp' class="swiperItem">
+          <view class="swiperItem-img-box">
+            <image src="{{item.ImgUrl}}" class="swiperItem-image"></image>
+          </view>
+          <view class="itemWord-title1">
+            {{item.Txt1}}
+          </view>
+          <view class="itemWord-title2">
+            {{item.Txt2}}
+          </view>
+        </swiper-item>
+      </block>
+    </swiper> 
+  </view>
+  <!--广告13-->
+  <view class="ads13" wx:if="{{_id===12}}">
+    <swiper class="swiper" 
+      display-multiple-items="3"
+    >
+      <!--列表项循环,循环的里面的某一项，现在的是临时的-->
+      <block wx:for="{{data.AttrData}}" wx:key="index">
+        <!--预计是 列表项 点击-->
+        <swiper-item data-obj="{{item}}" bindtap='toOtherApp' class="swiperItem">
+          <view class="swiperItem-img-box">
+            <image src="{{item.ImgUrl}}" class="swiperItem-image"></image>
+          </view>
+          <view class="itemWord">
+            {{item.Txt1}}
+          </view>
+        </swiper-item>
+      </block>
+    </swiper> 
+  </view>
+  <!--广告14-->
+  <view class="ads14" wx:if="{{_id===13}}">
+    <view data-state="0" class="applist" bindtap='toOtherApp'>  
+      <image src="{{data.AttrData[0].ImgUrl}}" class="appLogo"></image>
+      <view class="appCon">
+        <view>
+          <text class="appName">{{data.AttrData[0].Txt1}}</text>
+          <text class="appDesc">{{data.AttrData[0].Txt2}}</text>
+        </view>
+      </view>
+    </view> 
+  </view>
+</view>

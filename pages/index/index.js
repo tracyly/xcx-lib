@@ -29,6 +29,9 @@ Page({
             zh: 'pay 微信支付(需登录)',
             url: ''
           }, {
+            zh: 'updateUser 更新用户信息',
+            url: ''
+          }, {
             zh: 'getConfig 请求 当前小程序 配置文件',
             url: ''
           }, {
@@ -56,6 +59,9 @@ Page({
           }, {
             zh: 'notify-top2',
             url: 'notify2/notify2'
+          }, {
+              zh: 'custom-camera',
+              url: 'camera/camera'
           }
         ]
       }, {

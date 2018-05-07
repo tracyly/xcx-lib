@@ -1,3 +1,5 @@
 <!--pages/demo/demo.wxml-->
 <text>pages/demo/demo.wxml</text>
 <button type='primary' bindtap='change'>切歌</button>
+<image class='b a111' bindtap='b1' mode='widthFix' src='../../imgs/logo.png'></image>
+<image class='b a222' bindtap='b2' mode='widthFix' src='../../imgs/kind/api.png'></image>

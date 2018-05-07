@@ -1,43 +1,18 @@
-// pages/demo/demo.js
-import Player from '../../lib/player/player.js'
-
-var player = new Player()
+// pages/ads/ads.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    list: [{
-      dataUrl: 'https://xcx-album-img.duomai.com/lnVvZDO8XhBXCxFjU3XUbxaLh0YH'
-    }, {
-      dataUrl: 'https://xcx-album-img.duomai.com/lnVvZDO8XhBXCxFjU3XUbxaLh0YH'
-    }]
+  
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // player.list.create(this.data.list)
-    // player.start()
-  },
-
-  change: function (e) {
-    player.invoke(1)
-  },
-
-  b1: function (e) {
-    wx.showToast({
-      title: '1111111111',
-      icon: 'success'
-    })
-  },
-  b2: function (e) {
-    wx.showToast({
-      title: '222222222',
-      icon: 'success'
-    })
+  
   },
 
   /**

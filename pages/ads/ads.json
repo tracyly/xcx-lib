@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "ads": "../../component/ads/ads"
+  }
+}

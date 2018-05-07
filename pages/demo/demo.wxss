@@ -1,1 +1,11 @@
 /* pages/demo/demo.wxss */
+.b {
+  width: 300px;
+  position: absolute;
+}
+.a111 {
+
+}
+.a222 {
+  left: 150px;
+}

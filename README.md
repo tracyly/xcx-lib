@@ -20,8 +20,8 @@
 ```js
 const config = {
   appid: 'wxf1v3c2x1vr1f3121',
-  host: 'https://meinv1.p1j2.com',
-  commonHost: 'https://common.p1j2.com'
+  host: 'https://game1.zmwxxcx.com',
+  commonHost: 'https://common.zmwxxcx.com'
   // 其它内容
 }
 
@@ -123,10 +123,11 @@ notify-top 样式:
 3. submitFormId ： 提交 formid 方法
 4. submitAdvid ： 提交 advID 方法
 5. pay ： 微信支付 方法
-6. getConfig ： 请求 当前小程序 配置文件
-7. getUserInfo ： 获取用户 头像 昵称 等信息 方法（wx.getUserInfo 的 promise 封装）
-8. getUserClient ： 获取 Token UserID 方法，返回 {Expire: 1, Token: 'gdsfgd', UserID: 1}，当 Token 为 '' 时，表示 Token 不存在或已失效
-9. getSetting ： 获取用户 是否授权 某项功能
+6. updateUser ： 更新用户信息 方法
+7. getConfig ： 请求 当前小程序 配置文件
+8. getUserInfo ： 获取用户 头像 昵称 等信息 方法（wx.getUserInfo 的 promise 封装）
+9. getUserClient ： 获取 Token UserID 方法，返回 {Expire: 1, Token: 'gdsfgd', UserID: 1}，当 Token 为 '' 时，表示 Token 不存在或已失效
+10. getSetting ： 获取用户 是否授权 某项功能
 
 ### 一些约定：
 
@@ -246,6 +247,7 @@ now().then(res => {
 # Tips
 - 删去小程序中无用文件，目前小程序会将项目中所有文件打包上传
 - 需要频繁切换显示隐藏的元素使用 `<view hidden="{{flag ? true : false}}"> Hidden </view>` ，不要使用 `wx:if wx:else` ，后者会导致重绘
+- 小程序中的模板语法不支持 `js` 中的原生方法，如 `{{array.indexOf(1) ? 1 : 0}}` 是不能运行的，仅仅支持简单表达式： `{{array[0] === 1 ? 1 : 0}}`
 - 小程序中 所有本地图片 均需使用工具压缩，可以用这个： [https://tinypng.com/](https://tinypng.com/)
 - [exports vs module.exports](https://blog.tableflip.io/the-difference-between-module-exports-and-exports/)
 - [js object](https://www.w3schools.com/js/js_object_prototypes.asp)
