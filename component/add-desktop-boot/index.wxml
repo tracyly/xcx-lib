@@ -1,0 +1,20 @@
+<view class="content" hidden="{{!show}}" > <!--  hidden="{{!show}}" -->
+  <view class="prompt_title" wx:if="{{step==1}}">
+    <view class="close_btn_box">
+      <view class="left_btn" capture-catch:tap="closePrompt" data-type='1'></view>
+      <view class="right_btn" capture-catch:tap="switchStep"></view>
+    </view>
+    <image class="close_btn" src="close.png"></image>
+    <image class="logo" src="{{logo}}"></image>
+    <view class="hint_txt">添加“{{miniName}}”到手机桌面</view>
+    <view class="btn">添加</view>
+  </view>
+  <view class="prompt_body" wx:if="{{step==2}}" data-type='2' capture-catch:tap="closePrompt">
+    <image class="prompt_step1 prompt_step" mode="widthFix" src="./step1.png"></image>
+    <view class="fill"></view>
+    <image class="prompt_step_center prompt_step" mode="widthFix" src="./step-center.png"></image>
+    <view class="fill"></view>
+    <image class="prompt_step2 prompt_step" mode="widthFix" src="./step2.png"></image>
+    <view class="mask"></view>
+  </view>
+</view>

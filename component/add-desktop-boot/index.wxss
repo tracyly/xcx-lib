@@ -1,0 +1,100 @@
+.content {}
+
+.prompt_title {
+    height: 100rpx;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.80);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    z-index: 999;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.close_btn_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+}
+
+.close_btn_box .left_btn {
+    width: 70rpx;
+    height: 100%;
+}
+
+.close_btn_box .right_btn {
+    height: 100%;
+    flex: 1 1 auto;
+}
+
+.prompt_title .close_btn {
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.prompt_title .logo {
+    width: 64rpx;
+    height: 64rpx;
+}
+
+.prompt_title .hint_txt {
+    font-size: 32rpx;
+    color: #FFFFFF;
+}
+
+.prompt_title .btn {
+    font-size: 32rpx;
+    color: #242424;
+    padding: 10rpx 28rpx;
+    background: #FFFFFF;
+    border-radius: 16rpx;
+}
+
+.prompt_body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+.mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1D1D1D;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.prompt_body .prompt_step {
+    width: 100%;
+    display: block;
+}
+
+.prompt_body .fill {
+    flex: 1 1 auto;
+    height: 0rpx;
+}
+
+.prompt_bottom_bg {
+    position: fixed;
+    bottom: 0;
+    height: 400rpx;
+    background: #fff;
+    width: 100%;
+    background: #fff;
+}

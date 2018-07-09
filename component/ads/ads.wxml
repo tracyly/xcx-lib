@@ -7,52 +7,52 @@
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
     </view>
     <view class="title-box">
-      <view class="title">{{data.AttrData[0].Txt1}}</view>
+      <view class="title" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
     </view>
   </view>
   <!--广告2-->
   <view class="ads2 flex-between" wx:if="{{_id===1}}">
     <view class="ads2-left" bindtap='toOtherApp' data-state="0">
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title">{{data.AttrData[0].Txt1}}</view>
+      <view class="title" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
     </view>
     <view class="ads2-right" bindtap='toOtherApp' data-state="1">
       <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title">{{data.AttrData[1].Txt1}}</view>
+      <view class="title" wx:if="{{data.AttrData[1].Txt1}}">{{data.AttrData[1].Txt1}}</view>
     </view>
   </view>
   <!--广告3-->
   <view class="ads2 flex-between" wx:if="{{_id===2}}">
     <view class="ads2-left" bindtap='toOtherApp' data-state="0">
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[0].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
     </view>
     <view class="ads2-middle" bindtap='toOtherApp' data-state="1">
       <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[1].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[1].Txt1}}">{{data.AttrData[1].Txt1}}</view>
     </view>
     <view class="ads2-right" bindtap='toOtherApp' data-state="2">
       <image src="{{data.AttrData[2].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[2].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[2].Txt1}}">{{data.AttrData[2].Txt1}}</view>
     </view>
   </view>
   <!--广告4-->
   <view class="ads4 flex-between" wx:if="{{_id===3}}">
     <view class="ads2-left" bindtap='toOtherApp' data-state="0">
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[0].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
     </view>
     <view class="ads2-middle" bindtap='toOtherApp' data-state="1">
       <image src="{{data.AttrData[1].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[1].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[1].Txt1}}">{{data.AttrData[1].Txt1}}</view>
     </view>
     <view class="ads2-middle2" bindtap='toOtherApp' data-state="2">
       <image src="{{data.AttrData[2].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[2].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[2].Txt1}}">{{data.AttrData[2].Txt1}}</view>
     </view>
     <view class="ads2-right" bindtap='toOtherApp' data-state="3">
       <image src="{{data.AttrData[3].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
-      <view class="title text-center">{{data.AttrData[3].Txt1}}</view>
+      <view class="title text-center" wx:if="{{data.AttrData[3].Txt1}}">{{data.AttrData[3].Txt1}}</view>
     </view>
   </view>
   <!--广告5-->
@@ -61,7 +61,7 @@
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
     </view>
     <view class="ads5-right">
-      <view class="ads5-right-top">{{data.AttrData[0].Txt1}}</view>
+      <view class="ads5-right-top" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
       <text class="see" bindtap='toOtherApp' data-state="0">查看详情</text>
     </view>
   </view>
@@ -72,7 +72,7 @@
       <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
     </view>
     <view class="title-box flex-center">
-      <view class="title">{{data.AttrData[0].Txt1}}</view>
+      <view class="title" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
       <view><text class="see" bindtap='toOtherApp' data-state="0">查看详情</text></view>
     </view>
   </view>
@@ -87,7 +87,7 @@
           <image src="{{data.AttrData[0].ImgUrl||'./ai.png'}}" class="image" mode="widthFix"></image>
         </view>
         <view class="title-box flex-center">
-          <view class="title">{{data.AttrData[0].Txt1}}</view>
+          <view class="title" wx:if="{{data.AttrData[0].Txt1}}">{{data.AttrData[0].Txt1}}</view>
           <view><text class="see" bindtap='toOtherApp' data-state="0">查看详情</text></view>
         </view>
       </view>
@@ -174,7 +174,7 @@
       <!--列表项循环,循环的里面的某一项，现在的是临时的-->
       <block wx:for="{{data.AttrData}}" wx:key="index">
         <!--预计是 列表项 点击-->
-        <swiper-item data-obj="{{item}}" bindtap='toOtherApp' class="swiperItem">
+        <swiper-item data-state="{{index}}" bindtap='toOtherApp' class="swiperItem">
           <view class="swiperItem-img-box">
             <image src="{{item.ImgUrl}}" class="swiperItem-image"></image>
           </view>

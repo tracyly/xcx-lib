@@ -24,27 +24,31 @@ Component({
     },
     addData(){
       //加载页面信息
-      app.req.login().then(res => {
-        let Token = res.Token
-        return requestPromisify({
+      requestPromisify({
           url: `${config.commonHost}/find/position`,
           method: 'GET',
           data: {
             PositionID: this.id
           },
           header: {
-            cookie: `AppKey=${config.appid};Token=${Token}`
+            //cookie: `AppKey=${config.appid};Token=${Token}`
           }
-        })
-      }).then(res => {
+        }).then(res => {
         if(res.f===1){
           //判断是否显示
           let adsShow=Date.now()>new Date(res.d.StartDate).valueOf()&&Date.now()<new Date(res.d.EndDate).valueOf();
+          if(!res.d){//当没有res.d
+            adsShow=0;
+          }
           //得到信息存储
           this.setData({
             data: res.d,
             _id: ~~res.d.Type,
             adsShow: adsShow
+          });
+        }else if(res.f===0){
+          this.setData({
+            adsShow: 0
           });
         }
       })
@@ -56,11 +60,11 @@ Component({
       
       let state=e.currentTarget.dataset.state;
       if (!this.data.data.AttrData[state].FactParams1) {
-        //throw new Error('FactParams1 is must be exist');
-        console.log('FactParams1 is must be exist');
+        throw new Error('FactParams1 is must be exist');
+        //console.err('FactParams1 is must be exist');
       }
       wx.navigateToMiniProgram({
-        appId: this.data.data.AttrData[state].FactParams1,
+        appId: this.data.data.AttrData[state].FactParams1 || 'wxebd55180f2f224e5',
         path: '',
         envVersion: 'release',
         extraData: {},
